@@ -8,7 +8,7 @@ class Solution:
         for i in range(len(searchWord)):
             currWord += searchWord[i]
             currLength += 1
-            currCands = [cand for cand in products if cand[:currLength]==currWord]
+            currCands = [cand for cand in currCands if cand[:currLength]==currWord]
 
             answer.append(currCands[:3])
 
