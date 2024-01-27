@@ -2,7 +2,7 @@ class Solution:
     def kInversePairs(self, n: int, k: int) -> int:
         function = {(1, 0): 1, (2, 0): 1, (2, 1): 1, (2, 2): 0, (3, 0): 1}
         mod = 10**9 + 7
-        def f(n: int, k: int):
+        def f(n: int, k: int) -> int:
             if n == 0 or n * (n - 1) < k:
                 return 0
             elif (n, k) in function:
