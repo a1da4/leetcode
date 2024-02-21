@@ -9,6 +9,5 @@ class Solution:
             right = right >> 1
         
             shift += 1
-            print(shift, left, right)
 
         return left << shift
