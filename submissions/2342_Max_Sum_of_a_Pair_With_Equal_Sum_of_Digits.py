@@ -1,8 +1,16 @@
 class Solution:
     def maximumSum(self, nums: List[int]) -> int:
         sumdigit2num = {}
+
+        def calcDigitSum(num: int) -> int:
+            sumdigit = 0
+            while num > 0:
+                sumdigit += num % 10
+                num //= 10
+            return sumdigit
+    
         for num in nums:
-            sumdigit = sum([int(ch) for ch in str(num)])
+            sumdigit = calcDigitSum(num)
             
             if sumdigit not in sumdigit2num:
                 sumdigit2num[sumdigit] = []
