@@ -7,5 +7,6 @@ LeetCode problems
  - [x] [Programming Skills](https://leetcode.com/studyplan/programming-skills/)
  - [x] [Premium Algo 100](https://leetcode.com/studyplan/premium-algo-100/)
  - [x] [Dynamic Programming](https://leetcode.com/studyplan/dynamic-programming/)
- - [ ] [Dynamic Programming Grandmaster](https://leetcode.com/studyplan/dynamic-programming-grandmaster/)
+ - [x] [Dynamic Programming Grandmaster](https://leetcode.com/studyplan/dynamic-programming-grandmaster/)
+ - [ ] [Graph Theory](https://leetcode.com/studyplan/graph-theory)
 
