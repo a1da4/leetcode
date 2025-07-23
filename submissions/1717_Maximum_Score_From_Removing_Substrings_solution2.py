@@ -5,22 +5,21 @@ class Solution:
         else:
             score1, ch1, score2, ch2 = y, "ba", x, "ab"
         answer = 0
-        stack1 = []
+        stack1 = deque([])
         for ch in s:
-            stack1.append(ch)
-            while len(stack1) > 1 and stack1[-2] + stack1[-1] == ch1:
-                stack1.pop()
+            if stack1 and stack1[-1] + ch == ch1:
                 stack1.pop()
                 answer += score1
+            else:
+                stack1.append(ch)
         
-        stack2 = []
+        stack2 = deque([])
         for ch in stack1:
-            stack2.append(ch)
-            while len(stack2) > 1 and stack2[-2] + stack2[-1] == ch2:
-                stack2.pop()
+            if stack2 and stack2[-1] + ch == ch2:
                 stack2.pop()
                 answer += score2
+            else:
+                stack2.append(ch)
 
-                
         return answer
 
